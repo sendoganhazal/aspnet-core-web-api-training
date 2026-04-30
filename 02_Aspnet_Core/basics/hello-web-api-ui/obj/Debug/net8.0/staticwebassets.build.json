@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "LpMuYXXI6S59UOBozs+qvcFayXW4woYdOFttpAbC5z4=",
+  "Source": "hello-web-api-ui",
+  "BasePath": "_content/hello-web-api-ui",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

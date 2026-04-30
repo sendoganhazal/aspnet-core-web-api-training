@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "/9mxF/B+tVMgwuBhabPCWjTDdgr5zEWZ+aZ9D+tBAgQ=",
+  "Source": "hello-web-api-cli",
+  "BasePath": "_content/hello-web-api-cli",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

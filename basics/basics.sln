@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hello-web-api-cli", "hello-
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWebApi", "HelloWebApi\HelloWebApi.csproj", "{09A79D8B-A0A8-432D-B098-06ECB810EDDF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductApp", "ProductApp\ProductApp.csproj", "{B893FF6A-7708-4069-B602-6425AB2EA72B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +57,18 @@ Global
 		{09A79D8B-A0A8-432D-B098-06ECB810EDDF}.Release|x64.Build.0 = Release|Any CPU
 		{09A79D8B-A0A8-432D-B098-06ECB810EDDF}.Release|x86.ActiveCfg = Release|Any CPU
 		{09A79D8B-A0A8-432D-B098-06ECB810EDDF}.Release|x86.Build.0 = Release|Any CPU
+		{B893FF6A-7708-4069-B602-6425AB2EA72B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B893FF6A-7708-4069-B602-6425AB2EA72B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B893FF6A-7708-4069-B602-6425AB2EA72B}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{B893FF6A-7708-4069-B602-6425AB2EA72B}.Debug|x64.Build.0 = Debug|Any CPU
+		{B893FF6A-7708-4069-B602-6425AB2EA72B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B893FF6A-7708-4069-B602-6425AB2EA72B}.Debug|x86.Build.0 = Debug|Any CPU
+		{B893FF6A-7708-4069-B602-6425AB2EA72B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B893FF6A-7708-4069-B602-6425AB2EA72B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B893FF6A-7708-4069-B602-6425AB2EA72B}.Release|x64.ActiveCfg = Release|Any CPU
+		{B893FF6A-7708-4069-B602-6425AB2EA72B}.Release|x64.Build.0 = Release|Any CPU
+		{B893FF6A-7708-4069-B602-6425AB2EA72B}.Release|x86.ActiveCfg = Release|Any CPU
+		{B893FF6A-7708-4069-B602-6425AB2EA72B}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

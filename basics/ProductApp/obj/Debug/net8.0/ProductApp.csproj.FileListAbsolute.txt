@@ -35,3 +35,5 @@ C:\Users\Maarifa 1\Desktop\aspnet-core-web-api-training\basics\ProductApp\obj\De
 C:\Users\Maarifa 1\Desktop\aspnet-core-web-api-training\basics\ProductApp\obj\Debug\net8.0\ProductApp.pdb
 C:\Users\Maarifa 1\Desktop\aspnet-core-web-api-training\basics\ProductApp\obj\Debug\net8.0\ProductApp.genruntimeconfig.cache
 C:\Users\Maarifa 1\Desktop\aspnet-core-web-api-training\basics\ProductApp\obj\Debug\net8.0\ref\ProductApp.dll
+C:\Users\Maarifa 1\Desktop\aspnet-core-web-api-training\basics\ProductApp\bin\Debug\net8.0\appsettings.Production.Development.json
+C:\Users\Maarifa 1\Desktop\aspnet-core-web-api-training\basics\ProductApp\bin\Debug\net8.0\appsettings.Production.json

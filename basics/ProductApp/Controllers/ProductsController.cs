@@ -4,7 +4,7 @@ using ProductApp.Models;
 
 namespace ProductApp.Controllers
 {
-    [Route ( "api/products" )]
+    [Route("api/products")]
     [ApiController]
     public class ProductsController : ControllerBase
     {
@@ -12,13 +12,13 @@ namespace ProductApp.Controllers
         // Dependancy Injection
         private readonly ILogger<ProductsController> _logger;
 
-        public ProductsController ( ILogger<ProductsController> logger )
+        public ProductsController (ILogger<ProductsController> logger)
         {
             _logger = logger;
         }
 
         [HttpGet]
-        public IActionResult getAllProducts ( )
+        public IActionResult getAllProduct()
         {
             var products = new List<Product>()
             {
@@ -28,6 +28,14 @@ namespace ProductApp.Controllers
             };
             _logger.LogInformation ( "GetAllProducts action has been called" );
             return Ok(products);
+        }
+
+        [HttpPost]
+        
+        public IActionResult getAllProducts([FromBody] Product product)
+        {
+           _logger.LogWarning("Products has been created");
+            return StatusCode(201); // Created
         }
     }
 }

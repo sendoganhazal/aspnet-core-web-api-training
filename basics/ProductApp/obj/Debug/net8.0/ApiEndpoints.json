@@ -1,0 +1,12 @@
+[
+  {
+    "ContainingType": "ProductApp.Controllers.ProductsController",
+    "Method": "getAllProducts",
+    "RelativePath": "api/products",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

@@ -22,7 +22,7 @@ namespace bookDemo.Controllers
 
             if(book is null) 
             {
-                return NotFound(); // 404 döner
+                return NotFound(); // 404 
             }
 
             return Ok(book);
@@ -34,7 +34,7 @@ namespace bookDemo.Controllers
             {
                 if (book is null)
                 {
-                    return BadRequest(); // 400 döner
+                    return BadRequest(); // 400
                 }
                 ApplicationContext.Books.Add(book);
                 return StatusCode(201, book);
@@ -44,6 +44,26 @@ namespace bookDemo.Controllers
                 return BadRequest(ex);
             }
             
+        }
+
+        [HttpPut("{id:int}")]
+        public IActionResult UpdateOneBook([FromRoute(Name = "id")] int id, [FromBody] Book book)
+        {
+            // check book
+            var entity = ApplicationContext.Books.Find(b => b.Id.Equals(id));
+            if (entity is null)
+            {
+                return NotFound();
+            }
+            // check id
+            if (id != book.Id)
+            {
+                return BadRequest("Parametre Hatası");
+            }
+            ApplicationContext.Books.Remove(entity);
+            book.Id = entity.Id;
+            ApplicationContext.Books.Add(book);
+            return Ok(book);
         }
     }
 }

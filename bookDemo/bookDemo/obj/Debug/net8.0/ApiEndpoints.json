@@ -11,6 +11,22 @@
   },
   {
     "ContainingType": "bookDemo.Controllers.BooksController",
+    "Method": "CreateOneBook",
+    "RelativePath": "api/books",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "book",
+        "Type": "bookDemo.Model.Book",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "bookDemo.Controllers.BooksController",
     "Method": "GetOneBook",
     "RelativePath": "api/books/{id}",
     "HttpMethod": "GET",

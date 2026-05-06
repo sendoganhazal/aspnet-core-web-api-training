@@ -10,7 +10,7 @@ using WebApi.Repositories;
 namespace WebApi.Migrations
 {
     [DbContext(typeof(RepositoryContext))]
-    [Migration("20260506082301_startPoint")]
+    [Migration("20260506091348_startPoint")]
     partial class startPoint
     {
         /// <inheritdoc />

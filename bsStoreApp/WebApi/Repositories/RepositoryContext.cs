@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System.Reflection.Emit;
-using WebApi.Models;
+using Entities.Models;
 using WebApi.Repositories.Config;
 
 namespace WebApi.Repositories

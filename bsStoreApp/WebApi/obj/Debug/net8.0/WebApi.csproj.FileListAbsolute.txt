@@ -22,12 +22,6 @@ C:\Users\Maarifa 1\Desktop\aspnet-core-web-api-training\bsStoreApp\WebApi\obj\De
 C:\Users\Maarifa 1\Desktop\aspnet-core-web-api-training\bsStoreApp\WebApi\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\Maarifa 1\Desktop\aspnet-core-web-api-training\bsStoreApp\WebApi\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\Maarifa 1\Desktop\aspnet-core-web-api-training\bsStoreApp\WebApi\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-C:\Users\Maarifa 1\Desktop\aspnet-core-web-api-training\bsStoreApp\WebApi\obj\Debug\net8.0\staticwebassets\msbuild.WebApi.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\Maarifa 1\Desktop\aspnet-core-web-api-training\bsStoreApp\WebApi\obj\Debug\net8.0\staticwebassets\msbuild.WebApi.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
-C:\Users\Maarifa 1\Desktop\aspnet-core-web-api-training\bsStoreApp\WebApi\obj\Debug\net8.0\staticwebassets\msbuild.build.WebApi.props
-C:\Users\Maarifa 1\Desktop\aspnet-core-web-api-training\bsStoreApp\WebApi\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.WebApi.props
-C:\Users\Maarifa 1\Desktop\aspnet-core-web-api-training\bsStoreApp\WebApi\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.WebApi.props
-C:\Users\Maarifa 1\Desktop\aspnet-core-web-api-training\bsStoreApp\WebApi\obj\Debug\net8.0\staticwebassets.pack.json
 C:\Users\Maarifa 1\Desktop\aspnet-core-web-api-training\bsStoreApp\WebApi\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\Maarifa 1\Desktop\aspnet-core-web-api-training\bsStoreApp\WebApi\obj\Debug\net8.0\WebApi.csproj.Up2Date
 C:\Users\Maarifa 1\Desktop\aspnet-core-web-api-training\bsStoreApp\WebApi\obj\Debug\net8.0\WebApi.dll
@@ -170,3 +164,8 @@ C:\Users\Maarifa 1\Desktop\aspnet-core-web-api-training\bsStoreApp\WebApi\bin\De
 C:\Users\Maarifa 1\Desktop\aspnet-core-web-api-training\bsStoreApp\WebApi\bin\Debug\net8.0\Entities.pdb
 C:\Users\Maarifa 1\Desktop\aspnet-core-web-api-training\bsStoreApp\WebApi\bin\Debug\net8.0\Repositories.dll
 C:\Users\Maarifa 1\Desktop\aspnet-core-web-api-training\bsStoreApp\WebApi\bin\Debug\net8.0\Repositories.pdb
+C:\Users\Maarifa 1\Desktop\aspnet-core-web-api-training\bsStoreApp\WebApi\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\Maarifa 1\Desktop\aspnet-core-web-api-training\bsStoreApp\WebApi\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\Maarifa 1\Desktop\aspnet-core-web-api-training\bsStoreApp\WebApi\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\Maarifa 1\Desktop\aspnet-core-web-api-training\bsStoreApp\WebApi\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\Maarifa 1\Desktop\aspnet-core-web-api-training\bsStoreApp\WebApi\obj\Debug\net8.0\staticwebassets.build.json.cache

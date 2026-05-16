@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
+using Repositories.Contracts;
 using Repositories.EFCore;
 
 namespace WebApi.Controllers
@@ -10,114 +11,114 @@ namespace WebApi.Controllers
     [ApiController]
     public class BooksController : ControllerBase
     {
-        private readonly RepositoryContext _context;
+        private readonly IRepositoryManager _manager;
 
-        public BooksController(RepositoryContext context)
+        public BooksController ( IRepositoryManager manager )
         {
-            _context = context;
+            _manager = manager;
         }
 
         [HttpGet]
-        public IActionResult getAllBooks()
+        public IActionResult getAllBooks ( )
         {
             try
             {
-                var books = _context.Books.ToList();
-                return Ok(books);
+                var books = _manager.Book.GetAllBooks(false);
+                return Ok ( books );
             }
-            catch (Exception ex)
+            catch ( Exception ex )
             {
 
-                throw new Exception(ex.Message);
+                throw new Exception ( ex.Message );
             }
-       
+
         }
-        [HttpGet("{id:int}")]
-        public IActionResult GetOneBook([FromRoute (Name = "id")] int id)
+        [HttpGet ( "{id:int}" )]
+        public IActionResult GetOneBook ( [FromRoute ( Name = "id" )] int id )
         {
             try
             {
-                var book = _context.Books.Where(b => b.Id.Equals(id)).SingleOrDefault();
+                var book = _manager.Book.GetOneBookById(id,false);
 
-                if (book is null)
+                if ( book is null )
                 {
-                    return NotFound(); // 404 
+                    return NotFound ( ); // 404 
                 }
 
-                return Ok(book);
+                return Ok ( book );
             }
-            catch (Exception ex)
+            catch ( Exception ex )
             {
 
-                throw new Exception(ex.Message);
+                throw new Exception ( ex.Message );
             }
-     
+
         }
         [HttpPost]
-        public IActionResult CreateOneBook([FromBody] Book book)
+        public IActionResult CreateOneBook ( [FromBody] Book book )
         {
             try
             {
-                if(book is null)
+                if ( book is null )
                 {
-                    return BadRequest(); // 400
+                    return BadRequest ( ); // 400
                 }
-                _context.Books.Add(book);
-                _context.SaveChanges();
-                return StatusCode(201, book);
+                _manager.Book.CreateOneBook ( book );
+                _manager.Save ( );
+                return StatusCode ( 201, book );
             }
-            catch(Exception ex)
+            catch ( Exception ex )
             {
-                return BadRequest(ex);
+                return BadRequest ( ex );
             }
 
         }
 
-        [HttpPut("{id:int}")]
-        public IActionResult UpdateOneBook([FromRoute(Name = "id")] int id, [FromBody] Book book)
+        [HttpPut ( "{id:int}" )]
+        public IActionResult UpdateOneBook ( [FromRoute ( Name = "id" )] int id, [FromBody] Book book )
         {
             try
             {
                 // check book
-                var entity = _context.Books.Where(b => b.Id.Equals(id)).SingleOrDefault();
-                if (entity is null)
+                var entity = _manager.Book.GetOneBookById(id,true);
+                if ( entity is null )
                 {
-                    return NotFound();
+                    return NotFound ( );
                 }
                 // check id
-                if (id != book.Id)
+                if ( id != book.Id )
                 {
-                    return BadRequest("Parametre Hatası");
+                    return BadRequest ( "Parametre Hatası" );
                 }
                 entity.Title = book.Title;
                 entity.Price = book.Price;
 
-                _context.SaveChanges();
-                return Ok (book);
+                _manager.Save ( );
+                return Ok ( book );
             }
-            catch (Exception ex)
+            catch ( Exception ex )
             {
 
-                return BadRequest(ex);
+                return BadRequest ( ex );
             }
         }
-        [HttpDelete ("{id:int}")]
-        public IActionResult DeleteOneBook([FromRoute(Name = "id")] int id)
+        [HttpDelete ( "{id:int}" )]
+        public IActionResult DeleteOneBook ( [FromRoute ( Name = "id" )] int id )
         {
             // check book
-            var entity = _context.Books.Where(b => b.Id.Equals(id)).SingleOrDefault();
-            if (entity is null)
+            var entity = _manager.Book.GetOneBookById(id, false);
+            if ( entity is null )
             {
-                return NotFound (new
+                return NotFound ( new
                 {
                     statusCode = 404,
                     message = $"Book with id: {id} could not found"
-                });// 404
+                } );// 404
             }
 
-            _context.Books.Remove(entity);
-            _context.SaveChanges();
-            return NoContent(); // 204
+            _manager.Book.DeleteOneBook ( entity );
+            _manager.Save ( );
+            return NoContent ( ); // 204
         }
     }
 }

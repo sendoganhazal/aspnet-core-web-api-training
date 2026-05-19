@@ -170,3 +170,15 @@ C:\Users\Maarifa 1\Desktop\aspnet-core-web-api-training\bsStoreApp\WebApi\obj\De
 C:\Users\Maarifa 1\Desktop\aspnet-core-web-api-training\bsStoreApp\WebApi\obj\Debug\net8.0\staticwebassets.build.json.cache
 C:\Users\Maarifa 1\Desktop\aspnet-core-web-api-training\bsStoreApp\WebApi\bin\Debug\net8.0\Services.dll
 C:\Users\Maarifa 1\Desktop\aspnet-core-web-api-training\bsStoreApp\WebApi\bin\Debug\net8.0\Services.pdb
+C:\Users\Maarifa 1\Desktop\aspnet-core-web-api-training\bsStoreApp\WebApi\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\Maarifa 1\Desktop\aspnet-core-web-api-training\bsStoreApp\WebApi\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Maarifa 1\Desktop\aspnet-core-web-api-training\bsStoreApp\WebApi\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Maarifa 1\Desktop\aspnet-core-web-api-training\bsStoreApp\WebApi\bin\Debug\net8.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
+C:\Users\Maarifa 1\Desktop\aspnet-core-web-api-training\bsStoreApp\WebApi\bin\Debug\net8.0\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Users\Maarifa 1\Desktop\aspnet-core-web-api-training\bsStoreApp\WebApi\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Maarifa 1\Desktop\aspnet-core-web-api-training\bsStoreApp\WebApi\bin\Debug\net8.0\Microsoft.Extensions.ObjectPool.dll
+C:\Users\Maarifa 1\Desktop\aspnet-core-web-api-training\bsStoreApp\WebApi\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\Maarifa 1\Desktop\aspnet-core-web-api-training\bsStoreApp\WebApi\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
+C:\Users\Maarifa 1\Desktop\aspnet-core-web-api-training\bsStoreApp\WebApi\bin\Debug\net8.0\Presentation.dll
+C:\Users\Maarifa 1\Desktop\aspnet-core-web-api-training\bsStoreApp\WebApi\bin\Debug\net8.0\Presentation.pdb
+C:\Users\Maarifa 1\Desktop\aspnet-core-web-api-training\bsStoreApp\WebApi\obj\Debug\net8.0\WebApi.MvcApplicationPartsAssemblyInfo.cs

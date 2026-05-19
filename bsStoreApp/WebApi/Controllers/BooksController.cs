@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using Repositories.Contracts;
 using Repositories.EFCore;
+using Services.Contracts;
 
 namespace WebApi.Controllers
 {
@@ -11,9 +12,9 @@ namespace WebApi.Controllers
     [ApiController]
     public class BooksController : ControllerBase
     {
-        private readonly IRepositoryManager _manager;
+        private readonly IServiceManager _manager;
 
-        public BooksController ( IRepositoryManager manager )
+        public BooksController ( IServiceManager manager )
         {
             _manager = manager;
         }
@@ -23,7 +24,7 @@ namespace WebApi.Controllers
         {
             try
             {
-                var books = _manager.Book.GetAllBooks(false);
+                var books = _manager.BookService.GetAllBooks(false);
                 return Ok ( books );
             }
             catch ( Exception ex )
@@ -38,7 +39,7 @@ namespace WebApi.Controllers
         {
             try
             {
-                var book = _manager.Book.GetOneBookById(id,false);
+                var book = _manager.BookService.GetOneBookById(id,false);
 
                 if ( book is null )
                 {
@@ -63,8 +64,7 @@ namespace WebApi.Controllers
                 {
                     return BadRequest ( ); // 400
                 }
-                _manager.Book.CreateOneBook ( book );
-                _manager.Save ( );
+                _manager.BookService.CreateOneBook ( book );
                 return StatusCode ( 201, book );
             }
             catch ( Exception ex )
@@ -79,22 +79,13 @@ namespace WebApi.Controllers
         {
             try
             {
-                // check book
-                var entity = _manager.Book.GetOneBookById(id,true);
-                if ( entity is null )
+                if ( book is null )
                 {
-                    return NotFound ( );
+                    return BadRequest ( ); // 400
                 }
-                // check id
-                if ( id != book.Id )
-                {
-                    return BadRequest ( "Parametre Hatası" );
-                }
-                entity.Title = book.Title;
-                entity.Price = book.Price;
+                _manager.BookService.UpdateOneBook ( id, book, true );
 
-                _manager.Save ( );
-                return Ok ( book );
+                return NoContent ( ); // 204
             }
             catch ( Exception ex )
             {
@@ -105,20 +96,18 @@ namespace WebApi.Controllers
         [HttpDelete ( "{id:int}" )]
         public IActionResult DeleteOneBook ( [FromRoute ( Name = "id" )] int id )
         {
-            // check book
-            var entity = _manager.Book.GetOneBookById(id, false);
-            if ( entity is null )
-            {
-                return NotFound ( new
-                {
-                    statusCode = 404,
-                    message = $"Book with id: {id} could not found"
-                } );// 404
-            }
 
-            _manager.Book.DeleteOneBook ( entity );
-            _manager.Save ( );
-            return NoContent ( ); // 204
+            try
+            {
+                _manager.BookService.DeleteOneBook ( id, false );
+                return NoContent ( ); // 204
+            }
+            catch ( Exception ex )
+            {
+
+                return BadRequest ( ex );
+            }
+          
         }
     }
 }

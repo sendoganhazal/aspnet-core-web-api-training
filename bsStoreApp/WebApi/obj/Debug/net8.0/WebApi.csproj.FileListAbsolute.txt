@@ -15,7 +15,6 @@ C:\Users\Maarifa 1\Desktop\aspnet-core-web-api-training\bsStoreApp\WebApi\obj\De
 C:\Users\Maarifa 1\Desktop\aspnet-core-web-api-training\bsStoreApp\WebApi\obj\Debug\net8.0\WebApi.AssemblyInfoInputs.cache
 C:\Users\Maarifa 1\Desktop\aspnet-core-web-api-training\bsStoreApp\WebApi\obj\Debug\net8.0\WebApi.AssemblyInfo.cs
 C:\Users\Maarifa 1\Desktop\aspnet-core-web-api-training\bsStoreApp\WebApi\obj\Debug\net8.0\WebApi.csproj.CoreCompileInputs.cache
-C:\Users\Maarifa 1\Desktop\aspnet-core-web-api-training\bsStoreApp\WebApi\obj\Debug\net8.0\WebApi.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Maarifa 1\Desktop\aspnet-core-web-api-training\bsStoreApp\WebApi\obj\Debug\net8.0\WebApi.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Maarifa 1\Desktop\aspnet-core-web-api-training\bsStoreApp\WebApi\obj\Debug\net8.0\WebApi.sourcelink.json
 C:\Users\Maarifa 1\Desktop\aspnet-core-web-api-training\bsStoreApp\WebApi\obj\Debug\net8.0\scopedcss\bundle\WebApi.styles.css
@@ -169,3 +168,5 @@ C:\Users\Maarifa 1\Desktop\aspnet-core-web-api-training\bsStoreApp\WebApi\obj\De
 C:\Users\Maarifa 1\Desktop\aspnet-core-web-api-training\bsStoreApp\WebApi\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
 C:\Users\Maarifa 1\Desktop\aspnet-core-web-api-training\bsStoreApp\WebApi\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
 C:\Users\Maarifa 1\Desktop\aspnet-core-web-api-training\bsStoreApp\WebApi\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\Maarifa 1\Desktop\aspnet-core-web-api-training\bsStoreApp\WebApi\bin\Debug\net8.0\Services.dll
+C:\Users\Maarifa 1\Desktop\aspnet-core-web-api-training\bsStoreApp\WebApi\bin\Debug\net8.0\Services.pdb

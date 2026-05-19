@@ -1798,6 +1798,20 @@
         "runtime": {
           "bin/placeholder/Repositories.dll": {}
         }
+      },
+      "Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Entities": "1.0.0",
+          "Repositories": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Services.dll": {}
+        }
       }
     }
   },
@@ -4869,6 +4883,11 @@
       "type": "project",
       "path": "../Repositories/Repositories.csproj",
       "msbuildProject": "../Repositories/Repositories.csproj"
+    },
+    "Services/1.0.0": {
+      "type": "project",
+      "path": "../Services/Services.csproj",
+      "msbuildProject": "../Services/Services.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -4880,6 +4899,7 @@
       "Microsoft.EntityFrameworkCore.Sqlite >= 8.0.0",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.0",
       "Repositories >= 1.0.0",
+      "Services >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.6.2"
     ]
   },
@@ -4921,6 +4941,9 @@
             },
             "C:\\Users\\Maarifa 1\\Desktop\\aspnet-core-web-api-training\\bsStoreApp\\Repositories\\Repositories.csproj": {
               "projectPath": "C:\\Users\\Maarifa 1\\Desktop\\aspnet-core-web-api-training\\bsStoreApp\\Repositories\\Repositories.csproj"
+            },
+            "C:\\Users\\Maarifa 1\\Desktop\\aspnet-core-web-api-training\\bsStoreApp\\Services\\Services.csproj": {
+              "projectPath": "C:\\Users\\Maarifa 1\\Desktop\\aspnet-core-web-api-training\\bsStoreApp\\Services\\Services.csproj"
             }
           }
         }

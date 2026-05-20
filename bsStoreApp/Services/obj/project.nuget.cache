@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "+5zfW1382HE=",
+  "dgSpecHash": "lG1N0jYSHBk=",
   "success": true,
   "projectFilePath": "C:\\Users\\Maarifa 1\\Desktop\\aspnet-core-web-api-training\\bsStoreApp\\Services\\Services.csproj",
   "expectedPackageFiles": [
@@ -40,6 +40,8 @@
     "C:\\Users\\Maarifa 1\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\Maarifa 1\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\microsoft.sqlserver.server.1.0.0.nupkg.sha512",
     "C:\\Users\\Maarifa 1\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
+    "C:\\Users\\Maarifa 1\\.nuget\\packages\\nlog\\6.1.3\\nlog.6.1.3.nupkg.sha512",
+    "C:\\Users\\Maarifa 1\\.nuget\\packages\\nlog.extensions.logging\\6.1.3\\nlog.extensions.logging.6.1.3.nupkg.sha512",
     "C:\\Users\\Maarifa 1\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.1.6\\sqlitepclraw.bundle_e_sqlite3.2.1.6.nupkg.sha512",
     "C:\\Users\\Maarifa 1\\.nuget\\packages\\sqlitepclraw.core\\2.1.6\\sqlitepclraw.core.2.1.6.nupkg.sha512",
     "C:\\Users\\Maarifa 1\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.1.6\\sqlitepclraw.lib.e_sqlite3.2.1.6.nupkg.sha512",

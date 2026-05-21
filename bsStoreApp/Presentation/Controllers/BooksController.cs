@@ -1,4 +1,5 @@
-﻿using Entities.Excepitons;
+﻿using Entities.DataTransferObjects;
+using Entities.Excepitons;
 using Entities.Models;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
@@ -55,10 +56,10 @@ namespace Presentation.Controllers
 
         [HttpPut ( "{id:int}" )]
         public IActionResult UpdateOneBook ( [FromRoute ( Name = "id" )] int id,
-            [FromBody] Book book )
+            [FromBody] BookDtoForUpdate bookDto )
         {
 
-            _manager.BookService.UpdateOneBook ( id, book, true );
+            _manager.BookService.UpdateOneBook ( id, bookDto, true );
             return NoContent ( ); // 204
         }
 
@@ -82,7 +83,7 @@ namespace Presentation.Controllers
         
 
             bookPatch.ApplyTo ( entity );
-            _manager.BookService.UpdateOneBook ( id, entity, true );
+            _manager.BookService.UpdateOneBook ( id, new BookDtoForUpdate(entity.Id, entity.Title, entity.Price), true );
 
             return NoContent ( ); // 204
         }

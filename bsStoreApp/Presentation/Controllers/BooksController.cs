@@ -1,4 +1,5 @@
-﻿using Entities.Models;
+﻿using Entities.Excepitons;
+using Entities.Models;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using Services.Contracts;
@@ -31,13 +32,11 @@ namespace Presentation.Controllers
         [HttpGet ( "{id:int}" )]
         public IActionResult GetOneBook ( [FromRoute ( Name = "id" )] int id )
         {
-            throw new Exception ( "This is a test exception for global error handling." );
             var book = _manager
                 .BookService
                 .GetOneBookById(id, false);
 
-            if ( book is null )
-                return NotFound ( ); //404
+        
 
             return Ok ( book );
 
@@ -58,8 +57,6 @@ namespace Presentation.Controllers
         public IActionResult UpdateOneBook ( [FromRoute ( Name = "id" )] int id,
             [FromBody] Book book )
         {
-            if ( book is null )
-                return BadRequest ( ); // 400 
 
             _manager.BookService.UpdateOneBook ( id, book, true );
             return NoContent ( ); // 204
@@ -82,8 +79,7 @@ namespace Presentation.Controllers
                     .BookService
                     .GetOneBookById(id, true);
 
-            if ( entity is null )
-                return NotFound ( ); // 404
+        
 
             bookPatch.ApplyTo ( entity );
             _manager.BookService.UpdateOneBook ( id, entity, true );

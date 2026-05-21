@@ -39,6 +39,7 @@ namespace Presentation.Controllers
         {
             try
             {
+                throw new Exception("This is a test exception for global error handling.");
                 var book = _manager
                 .BookService
                 .GetOneBookById(id, false);

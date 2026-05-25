@@ -22,6 +22,21 @@
         ],
         "requestBody": {
           "content": {
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/Book"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/Book"
+              }
+            },
+            "application/*+xml": {
+              "schema": {
+                "$ref": "#/components/schemas/Book"
+              }
+            },
             "application/json-patch+json": {
               "schema": {
                 "$ref": "#/components/schemas/Book"
@@ -90,6 +105,21 @@
         ],
         "requestBody": {
           "content": {
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/BookDtoForUpdate"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/BookDtoForUpdate"
+              }
+            },
+            "application/*+xml": {
+              "schema": {
+                "$ref": "#/components/schemas/BookDtoForUpdate"
+              }
+            },
             "application/json-patch+json": {
               "schema": {
                 "$ref": "#/components/schemas/BookDtoForUpdate"
@@ -156,6 +186,30 @@
         ],
         "requestBody": {
           "content": {
+            "application/xml": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/Operation"
+                }
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/Operation"
+                }
+              }
+            },
+            "application/*+xml": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/Operation"
+                }
+              }
+            },
             "application/json-patch+json": {
               "schema": {
                 "type": "array",

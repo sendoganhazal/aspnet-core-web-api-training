@@ -61,7 +61,11 @@ namespace Presentation.Controllers
             [FromBody] BookDtoForUpdate bookDto )
         {
 
-            _manager.BookService.UpdateOneBook ( id, bookDto, true );
+            if ( bookDto is null )
+                return BadRequest ( );
+            if ( !ModelState.IsValid )
+                return UnprocessableEntity ( ModelState );
+            _manager.BookService.UpdateOneBook ( id, bookDto, false );
             return NoContent ( ); // 204
         }
 

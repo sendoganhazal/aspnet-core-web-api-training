@@ -83,3 +83,21 @@
 2026-06-01 13:28:30.6707 Info Configuration initialized: TargetNames=logfile, ConfigItems=12, AutoReload=true, FilePath=C:\Users\Maarifa 1\Desktop\aspnet-core-web-api-training\bsStoreApp\WebApi\nlog.config
 2026-06-01 13:31:58.5487 Info AppDomain Shutting down. LogFactory closing...
 2026-06-01 13:31:58.5564 Info LogFactory has been disposed.
+2026-06-01 13:36:00.3106 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-06-01 13:36:00.3274 Info NLog, Version=6.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 6.1.3.5285. Product version: 6.1.3+7f18a90739535f5ddc71c48e0fa28c59e5ee8969. GlobalAssemblyCache: False
+2026-06-01 13:36:00.3513 Info Configuration initialized: TargetNames=logfile, ConfigItems=12, AutoReload=true, FilePath=C:\Users\Maarifa 1\Desktop\aspnet-core-web-api-training\bsStoreApp\WebApi\nlog.config
+2026-06-01 13:36:04.3798 Info AppDomain Shutting down. LogFactory closing...
+2026-06-01 13:36:04.3798 Info LogFactory has been disposed.
+2026-06-01 13:36:06.9552 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-06-01 13:36:06.9797 Info NLog, Version=6.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 6.1.3.5285. Product version: 6.1.3+7f18a90739535f5ddc71c48e0fa28c59e5ee8969. GlobalAssemblyCache: False
+2026-06-01 13:36:07.0049 Info Configuration initialized: TargetNames=logfile, ConfigItems=12, AutoReload=true, FilePath=C:\Users\Maarifa 1\Desktop\aspnet-core-web-api-training\bsStoreApp\WebApi\nlog.config
+2026-06-01 13:36:55.6116 Info AppDomain Shutting down. LogFactory closing...
+2026-06-01 13:36:55.6217 Info LogFactory has been disposed.
+2026-06-01 13:37:09.5390 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-06-01 13:37:09.5577 Info NLog, Version=6.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 6.1.3.5285. Product version: 6.1.3+7f18a90739535f5ddc71c48e0fa28c59e5ee8969. GlobalAssemblyCache: False
+2026-06-01 13:37:09.5880 Info Configuration initialized: TargetNames=logfile, ConfigItems=12, AutoReload=true, FilePath=C:\Users\Maarifa 1\Desktop\aspnet-core-web-api-training\bsStoreApp\WebApi\nlog.config
+2026-06-01 13:39:14.7109 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-06-01 13:39:14.7320 Info NLog, Version=6.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 6.1.3.5285. Product version: 6.1.3+7f18a90739535f5ddc71c48e0fa28c59e5ee8969. GlobalAssemblyCache: False
+2026-06-01 13:39:14.7574 Info Configuration initialized: TargetNames=logfile, ConfigItems=12, AutoReload=true, FilePath=C:\Users\Maarifa 1\Desktop\aspnet-core-web-api-training\bsStoreApp\WebApi\nlog.config
+2026-06-01 13:40:03.2336 Info AppDomain Shutting down. LogFactory closing...
+2026-06-01 13:40:03.2413 Info LogFactory has been disposed.

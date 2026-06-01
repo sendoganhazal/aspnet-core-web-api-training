@@ -48,6 +48,8 @@ namespace Presentation.Controllers
         {
             if ( bookDto is null )
                 return BadRequest ( ); // 400 
+            if( !ModelState.IsValid )
+                return UnprocessableEntity ( ModelState ); // 422
 
             var book = _manager.BookService.CreateOneBook ( bookDto );
 

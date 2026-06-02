@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using NLog;
+using Presentation.ActionFilters;
 using Repositories.EFCore;
 using Services.Contracts;
 using WebApi.Extensions;
@@ -19,6 +20,8 @@ builder.Services.AddControllers(config =>
     .AddXmlDataContractSerializerFormatters()
     .AddApplicationPart(typeof(Presentation.AssemblyReference).Assembly)
     .AddNewtonsoftJson();
+builder.Services.AddScoped<ValidationFilterAttribute>(); // IoC container'a ValidationFilterAttribute'ý ekliyoruz
+
 builder.Services.Configure<ApiBehaviorOptions> ( options =>
 {
   options.SuppressModelStateInvalidFilter = true;

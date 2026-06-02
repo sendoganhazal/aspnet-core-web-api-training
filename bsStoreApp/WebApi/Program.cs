@@ -20,7 +20,7 @@ builder.Services.AddControllers(config =>
     .AddXmlDataContractSerializerFormatters()
     .AddApplicationPart(typeof(Presentation.AssemblyReference).Assembly)
     .AddNewtonsoftJson();
-builder.Services.AddScoped<ValidationFilterAttribute>(); // IoC container'a ValidationFilterAttribute'ý ekliyoruz
+
 
 builder.Services.Configure<ApiBehaviorOptions> ( options =>
 {
@@ -34,6 +34,7 @@ builder.Services.ConfigureRepositoryManager();
 builder.Services.ConfigureServiceManager();
 builder.Services.ConfigureLoggerService();
 builder.Services.AddAutoMapper(typeof(Program));
+builder.Services.ConfigureActionFilters ( );
 
 var app = builder.Build();
 

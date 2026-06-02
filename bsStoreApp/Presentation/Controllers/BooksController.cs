@@ -13,6 +13,7 @@ using System.Threading.Tasks;
 
 namespace Presentation.Controllers
 {
+    [ServiceFilter ( typeof ( LogFilterAttribute ) )]
     [ApiController]
     [Route ( "api/books" )]
     public class BooksController : ControllerBase
@@ -53,6 +54,7 @@ namespace Presentation.Controllers
             return StatusCode ( 201, book );
         }
 
+        
         [ServiceFilter ( typeof ( ValidationFilterAttribute ) )]
         [HttpPut ( "{id:int}" )]
         public async Task<IActionResult> UpdateOneBookAsync ( [FromRoute ( Name = "id" )] int id,

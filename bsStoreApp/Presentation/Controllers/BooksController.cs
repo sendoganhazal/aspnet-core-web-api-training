@@ -42,7 +42,7 @@ namespace Presentation.Controllers
             return Ok ( book );
 
         }
-
+        //[ValidationAttributeFilter]
         [HttpPost]
         public async Task<IActionResult> CreateOneBookAsync ( [FromBody] BookDtoForInsertion bookDto )
         {

@@ -14,7 +14,7 @@ namespace Repositories.EFCore
     {
         public BookRepository ( RepositoryContext context ) : base ( context )
         {
-      
+
         }
 
         public void CreateOneBook ( Book book ) => Create ( book );
@@ -23,7 +23,9 @@ namespace Repositories.EFCore
 
         public async Task<PagedList<Book>> GetAllBooksAsync ( BookParameters bookParameters, bool trackChanges )
         {
-           var book =  await FindAll ( trackChanges )
+            var book =  await FindByCondition ( b =>
+               ((b.Price >= bookParameters.MinPrice) && (b.Price <= bookParameters.MaxPrice))
+               ,trackChanges )
             .OrderBy ( b => b.Id )
             .ToListAsync ( );
             return PagedList<Book>.ToPagedList ( book, bookParameters.PageNumber, bookParameters.PageSize );

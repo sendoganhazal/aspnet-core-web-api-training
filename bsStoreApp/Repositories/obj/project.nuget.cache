@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "P3WIzz0zv/I=",
+  "dgSpecHash": "l+18dzHqQVw=",
   "success": true,
   "projectFilePath": "C:\\Users\\Maarifa 1\\Desktop\\aspnet-core-web-api-training\\bsStoreApp\\Repositories\\Repositories.csproj",
   "expectedPackageFiles": [
@@ -67,6 +67,7 @@
     "C:\\Users\\Maarifa 1\\.nuget\\packages\\system.formats.asn1\\5.0.0\\system.formats.asn1.5.0.0.nupkg.sha512",
     "C:\\Users\\Maarifa 1\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.24.0\\system.identitymodel.tokens.jwt.6.24.0.nupkg.sha512",
     "C:\\Users\\Maarifa 1\\.nuget\\packages\\system.io.pipelines\\6.0.3\\system.io.pipelines.6.0.3.nupkg.sha512",
+    "C:\\Users\\Maarifa 1\\.nuget\\packages\\system.linq.dynamic.core\\1.7.2\\system.linq.dynamic.core.1.7.2.nupkg.sha512",
     "C:\\Users\\Maarifa 1\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
     "C:\\Users\\Maarifa 1\\.nuget\\packages\\system.memory.data\\1.0.2\\system.memory.data.1.0.2.nupkg.sha512",
     "C:\\Users\\Maarifa 1\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",

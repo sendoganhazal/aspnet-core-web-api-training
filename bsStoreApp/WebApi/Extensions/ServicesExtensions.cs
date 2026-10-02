@@ -1,4 +1,5 @@
-﻿using Entities.DataTransferObjects;
+﻿using AutoMapper;
+using Entities.DataTransferObjects;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Formatters;
 using Microsoft.EntityFrameworkCore;
@@ -13,22 +14,22 @@ namespace WebApi.Extensions
     public static class ServicesExtensions
     {
         public static void ConfigureSqlContext ( this IServiceCollection services,
-            IConfiguration configuration ) =>
-            services.AddDbContext<RepositoryContext> ( options =>
-                options.UseSqlite ( configuration.GetConnectionString ( "sqlConnection" ) )
-            );
+            IConfiguration configuration ) => services.AddDbContext<RepositoryContext> ( options =>
+                    options.UseSqlServer ( configuration.GetConnectionString ( "sqlConnection" ) ) );
+
         public static void ConfigureRepositoryManager ( this IServiceCollection services ) =>
             services.AddScoped<IRepositoryManager, RepositoryManager> ( );
 
         public static void ConfigureServiceManager ( this IServiceCollection services ) =>
-            services.AddScoped<Services.Contracts.IServiceManager, Services.ServiceManager> ( );
+            services.AddScoped<IServiceManager, ServiceManager> ( );
 
         public static void ConfigureLoggerService ( this IServiceCollection services ) =>
-            services.AddSingleton<Services.Contracts.ILoggerService, Services.LoggerManager> ( );
+            services.AddSingleton<ILoggerService, LoggerManager> ( );
+
 
         public static void ConfigureActionFilters ( this IServiceCollection services )
         {
-            services.AddScoped<Presentation.ActionFilters.ValidationFilterAttribute> ( );
+            services.AddScoped<ValidationFilterAttribute> ( );
             services.AddSingleton<LogFilterAttribute> ( );
             services.AddScoped<ValidateMediaTypeAttribute> ( );
         }
@@ -39,10 +40,10 @@ namespace WebApi.Extensions
             {
                 options.AddPolicy ( "CorsPolicy", builder =>
                     builder.AllowAnyOrigin ( )
-                        .AllowAnyMethod ( )
-                        .AllowAnyHeader ( )
-                        .WithExposedHeaders ( "X-Pagination" )
-                    );
+                    .AllowAnyMethod ( )
+                    .AllowAnyHeader ( )
+                    .WithExposedHeaders ( "X-Pagination" )
+                );
             } );
         }
 
@@ -50,6 +51,7 @@ namespace WebApi.Extensions
         {
             services.AddScoped<IDataShaper<BookDto>, DataShaper<BookDto>> ( );
         }
+
         public static void AddCustomMediaTypes ( this IServiceCollection services )
         {
             services.Configure<MvcOptions> ( config =>
@@ -58,12 +60,10 @@ namespace WebApi.Extensions
                 .OutputFormatters
                 .OfType<SystemTextJsonOutputFormatter>()?.FirstOrDefault();
 
-                if ( systemTextJsonOutputFormatter is not null )
+                if ( systemTextJsonOutputFormatter != null )
                 {
                     systemTextJsonOutputFormatter.SupportedMediaTypes
-                    .Add("application/vnd.btkakademi.hateoas+json");
-                    //systemTextJsonOutputFormatter.SupportedMediaTypes
-                    //.Add("application/vnd.btkakademi.apiroot+json");
+                    .Add ( "application/vnd.btkakademi.hateoas+json" );
                 }
 
                 var xmlOutputFormatter = config
@@ -76,7 +76,8 @@ namespace WebApi.Extensions
                     .Add ( "application/vnd.btkakademi.hateoas+xml" );
                 }
             } );
-
         }
+
+
     }
 }

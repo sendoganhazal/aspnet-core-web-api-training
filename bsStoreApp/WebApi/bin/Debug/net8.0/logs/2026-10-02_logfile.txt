@@ -1,0 +1,20 @@
+2026-10-02 13:57:08.7262 INFO {"ModelName":"OnActionExecuting","Controller":"Books","Action":"GetAllBooks","Id":null,"CreatedAt":"2026-10-02T10:57:08.3517938Z"}
+2026-10-02 13:57:39.2074 INFO {"ModelName":"OnActionExecuting","Controller":"Books","Action":"GetAllBooks","Id":null,"CreatedAt":"2026-10-02T10:57:39.2072516Z"}
+2026-10-02 13:58:24.2602 INFO {"ModelName":"OnActionExecuting","Controller":"Books","Action":"GetAllBooks","Id":null,"CreatedAt":"2026-10-02T10:58:24.2597977Z"}
+2026-10-02 13:58:41.8028 INFO {"ModelName":"OnActionExecuting","Controller":"Books","Action":"GetAllBooks","Id":null,"CreatedAt":"2026-10-02T10:58:41.8027815Z"}
+2026-10-02 13:59:34.0392 INFO {"ModelName":"OnActionExecuting","Controller":"Books","Action":"GetAllBooks","Id":null,"CreatedAt":"2026-10-02T10:59:34.0390904Z"}
+2026-10-02 14:00:14.3631 INFO {"ModelName":"OnActionExecuting","Controller":"Books","Action":"GetAllBooks","Id":null,"CreatedAt":"2026-10-02T11:00:14.3629971Z"}
+2026-10-02 14:00:33.3207 INFO {"ModelName":"OnActionExecuting","Controller":"Books","Action":"GetAllBooks","Id":null,"CreatedAt":"2026-10-02T11:00:33.3206046Z"}
+2026-10-02 14:00:51.1662 INFO {"ModelName":"OnActionExecuting","Controller":"Books","Action":"GetAllBooks","Id":null,"CreatedAt":"2026-10-02T11:00:51.1660936Z"}
+2026-10-02 14:01:08.8597 INFO {"ModelName":"OnActionExecuting","Controller":"Books","Action":"GetAllBooks","Id":null,"CreatedAt":"2026-10-02T11:01:08.8596903Z"}
+2026-10-02 14:05:42.5543 INFO {"ModelName":"OnActionExecuting","Controller":"Books","Action":"GetAllBooks","Id":null,"CreatedAt":"2026-10-02T11:05:42.5230967Z"}
+2026-10-02 14:06:00.8884 ERROR Something went wrong:  
+2026-10-02 14:06:26.1948 INFO {"ModelName":"OnActionExecuting","Controller":"Books","Action":"GetAllBooks","Id":null,"CreatedAt":"2026-10-02T11:06:26.1947063Z"}
+2026-10-02 14:08:44.5198 INFO {"ModelName":"OnActionExecuting","Controller":"Books","Action":"GetAllBooks","Id":null,"CreatedAt":"2026-10-02T11:08:44.4920604Z"}
+2026-10-02 14:09:00.6678 ERROR Something went wrong:  
+2026-10-02 14:09:09.6391 INFO {"ModelName":"OnActionExecuting","Controller":"Books","Action":"GetAllBooks","Id":null,"CreatedAt":"2026-10-02T11:09:09.6389434Z"}
+2026-10-02 14:09:24.5233 ERROR Something went wrong:  
+2026-10-02 14:09:48.1153 INFO {"ModelName":"OnActionExecuting","Controller":"Books","Action":"GetAllBooks","Id":null,"CreatedAt":"2026-10-02T11:09:48.1152519Z"}
+2026-10-02 14:10:03.0387 ERROR Something went wrong:  
+2026-10-02 14:10:05.4354 INFO {"ModelName":"OnActionExecuting","Controller":"Books","Action":"GetAllBooks","Id":null,"CreatedAt":"2026-10-02T11:10:05.435422Z"}
+2026-10-02 14:10:05.7040 ERROR Something went wrong:  

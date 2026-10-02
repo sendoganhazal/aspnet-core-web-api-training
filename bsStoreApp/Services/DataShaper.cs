@@ -35,7 +35,7 @@ namespace Services
 
             if(string.IsNullOrWhiteSpace(fieldsString))
             {
-                var fields = fieldsString.Split (',', StringSplitOptions.RemoveEmptyEntries);
+                var fields = fieldsString?.Split (',', StringSplitOptions.RemoveEmptyEntries);
 
                 foreach ( var field in fields )
                 {

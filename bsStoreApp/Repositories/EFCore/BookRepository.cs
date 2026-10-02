@@ -2,7 +2,7 @@
 using Entities.RequestFeatures;
 using Microsoft.EntityFrameworkCore;
 using Repositories.Contracts;
-using Repositories.Extensions;
+using Repositories.EFCore.Extensions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,30 +13,31 @@ namespace Repositories.EFCore
 {
     public sealed class BookRepository : RepositoryBase<Book>, IBookRepository
     {
-        public BookRepository ( RepositoryContext context ) : base ( context )
+        public BookRepository(RepositoryContext context) : base(context)
         {
-
+            
         }
 
-        public void CreateOneBook ( Book book ) => Create ( book );
-
-        public void DeleteOneBook ( Book book ) => Delete ( book );
-
-        public async Task<PagedList<Book>> GetAllBooksAsync ( BookParameters bookParameters, bool trackChanges )
+        public void CreateOneBook(Book book) => Create(book);
+        public void DeleteOneBook(Book book) => Delete(book);
+        public async Task<PagedList<Book>> GetAllBooksAsync(BookParameters bookParameters,
+            bool trackChanges)
         {
-            var book =  await FindAll ( trackChanges )
-                .FilterBooks ( bookParameters.MinPrice, bookParameters.MaxPrice )
-                .Search(bookParameters.SearchTerm )
-                .OrderBy ( b => b.Id )
-                .ToListAsync ( );
-            return PagedList<Book>.ToPagedList ( book, bookParameters.PageNumber, bookParameters.PageSize );
+            var books = await FindAll(trackChanges)
+                .FilterBooks(bookParameters.MinPrice, bookParameters.MaxPrice)
+                .Search(bookParameters.SearchTerm)
+                .Sort(bookParameters.OrderBy)
+                .ToListAsync();
+
+            return PagedList<Book>
+                .ToPagedList(books, 
+                bookParameters.PageNumber, 
+                bookParameters.PageSize);
         }
 
-        public async Task<Book> GetOneBookByIdAsync ( int id, bool trackChanges ) =>
-          await FindByCondition ( b => b.Id.Equals ( id ), trackChanges )
-            .SingleOrDefaultAsync ( );
-
-        public void UpdateOneBook ( Book book ) => Update ( book );
-
+        public async Task<Book> GetOneBookByIdAsync(int id, bool trackChanges) =>
+            await FindByCondition(b => b.Id.Equals(id), trackChanges)
+            .SingleOrDefaultAsync();
+        public void UpdateOneBook(Book book) => Update(book);
     }
 }

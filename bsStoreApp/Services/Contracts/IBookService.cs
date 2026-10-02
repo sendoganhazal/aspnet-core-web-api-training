@@ -13,7 +13,7 @@ namespace Services.Contracts
 {
     public interface IBookService
     {
-        Task<(LinkResponse linkRespone, MetaData metaData)> GetAllBooksAsync(LinkParameters linkParameters, bool trackChanges);
+        Task<(LinkResponse linkResponse, MetaData metaData)> GetAllBooksAsync(LinkParameters linkParameters, bool trackChanges);
         Task<BookDto> GetOneBookByIdAsync(int id, bool trackChanges);
         Task<BookDto> CreateOneBookAsync(BookDtoForInsertion book);
         Task UpdateOneBookAsync(int id, BookDtoForUpdate bookDto, bool trackChanges);

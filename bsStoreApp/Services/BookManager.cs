@@ -49,7 +49,7 @@ namespace Services
             await _manager.SaveAsync ( );
         }
 
-        public async Task<(LinkResponse linkRespone, MetaData metaData)> GetAllBooksAsync ( LinkParameters linkParameters, bool trackChanges )
+        public async Task<(LinkResponse linkResponse, MetaData metaData)> GetAllBooksAsync ( LinkParameters linkParameters, bool trackChanges )
         {
             if ( !linkParameters.BookParameters.ValidPriceRange )
             {

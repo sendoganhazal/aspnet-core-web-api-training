@@ -11,9 +11,9 @@ namespace Entities.Models
         public int Id { get; set; }
         public Entity Entity { get; set; }
 
-        public ShapedEntity ( )
+        public ShapedEntity()
         {
-            Entity = new Entity ( );
+            Entity = new Entity();
         }
     }
 }

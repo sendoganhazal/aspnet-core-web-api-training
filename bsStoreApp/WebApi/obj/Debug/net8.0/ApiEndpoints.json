@@ -48,7 +48,8 @@
         "IsRequired": false
       }
     ],
-    "ReturnTypes": []
+    "ReturnTypes": [],
+    "EndpointName": "GetAllBooksAsync"
   },
   {
     "ContainingType": "Presentation.Controllers.BooksController",
@@ -105,7 +106,7 @@
   },
   {
     "ContainingType": "Presentation.Controllers.BooksController",
-    "Method": "DeleteOneBook",
+    "Method": "DeleteOneBookAsync",
     "RelativePath": "api/books/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
@@ -121,7 +122,7 @@
   },
   {
     "ContainingType": "Presentation.Controllers.BooksController",
-    "Method": "PartiallyUpdateOneBook",
+    "Method": "PartiallyUpdateOneBookAsync",
     "RelativePath": "api/books/{id}",
     "HttpMethod": "PATCH",
     "IsController": true,

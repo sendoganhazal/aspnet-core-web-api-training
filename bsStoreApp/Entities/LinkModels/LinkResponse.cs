@@ -1,5 +1,6 @@
 ﻿using Entities.Models;
 
+
 namespace Entities.LinkModels
 {
     public class LinkResponse
@@ -7,11 +8,10 @@ namespace Entities.LinkModels
         public bool HasLinks { get; set; }
         public List<Entity> ShapedEntities { get; set; }
         public LinkCollectionWrapper<Entity> LinkedEntities { get; set; }
-
-        public LinkResponse ( )
+        public LinkResponse()
         {
-            ShapedEntities = new List<Entity> ( );
-            LinkedEntities = new LinkCollectionWrapper<Entity> ( );
+            ShapedEntities = new List<Entity>();
+            LinkedEntities = new LinkCollectionWrapper<Entity>();
         }
     }
 }

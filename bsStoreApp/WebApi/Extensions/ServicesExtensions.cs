@@ -1,4 +1,6 @@
 ﻿using Entities.DataTransferObjects;
+using Entities.Models;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Presentation.ActionFilters;
 using Repositories.Contracts;
@@ -46,6 +48,21 @@ namespace WebApi.Extensions
         public static void ConfigureDataShaper ( this IServiceCollection services )
         {
             services.AddScoped<IDataShaper<BookDto>, DataShaper<BookDto>> ( );
+        }
+
+        public static void ConfigureIdentity ( this IServiceCollection services ) 
+        {
+            var builder = services.AddIdentity<User, IdentityRole>(opts =>
+            {
+                opts.Password.RequireDigit = true;
+                opts.Password.RequireLowercase = false;
+                opts.Password.RequireUppercase = false;
+                opts.Password.RequireNonAlphanumeric = false;
+                opts.Password.RequiredLength = 6;
+                opts.User.RequireUniqueEmail = true;
+            })
+                .AddEntityFrameworkStores<RepositoryContext>()
+                .AddDefaultTokenProviders();
         }
 
     }

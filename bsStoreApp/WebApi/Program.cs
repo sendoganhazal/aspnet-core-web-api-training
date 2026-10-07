@@ -38,6 +38,10 @@ builder.Services.ConfigureActionFilters ( );
 builder.Services.ConfigureCors ( );
 builder.Services.ConfigureDataShaper ( );
 
+
+builder.Services.AddAuthentication();
+builder.Services.ConfigureIdentity ( );
+
 var app = builder.Build();
 
 var logger = app.Services.GetRequiredService<ILoggerService>();
@@ -59,6 +63,7 @@ app.UseHttpsRedirection();
 
 app.UseCors ( "Cors Policy" );
 
+app.UseAuthentication ( );
 app.UseAuthorization();
 
 app.MapControllers();

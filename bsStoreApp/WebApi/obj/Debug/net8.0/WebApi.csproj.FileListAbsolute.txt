@@ -193,3 +193,4 @@ C:\Users\Maarifa 1\Desktop\aspnet-core-web-api-training\bsStoreApp\WebApi\bin\De
 C:\Users\Maarifa 1\Desktop\aspnet-core-web-api-training\bsStoreApp\WebApi\bin\Debug\net8.0\runtimes\linux-musl-riscv64\native\libe_sqlite3.so
 C:\Users\Maarifa 1\Desktop\aspnet-core-web-api-training\bsStoreApp\WebApi\bin\Debug\net8.0\runtimes\linux-musl-s390x\native\libe_sqlite3.so
 C:\Users\Maarifa 1\Desktop\aspnet-core-web-api-training\bsStoreApp\WebApi\bin\Debug\net8.0\runtimes\linux-riscv64\native\libe_sqlite3.so
+C:\Users\Maarifa 1\Desktop\aspnet-core-web-api-training\bsStoreApp\WebApi\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll

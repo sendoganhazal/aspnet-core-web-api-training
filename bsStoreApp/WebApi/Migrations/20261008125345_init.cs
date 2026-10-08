@@ -175,6 +175,16 @@ namespace WebApi.Migrations
                 });
 
             migrationBuilder.InsertData(
+                table: "AspNetRoles",
+                columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
+                values: new object[,]
+                {
+                    { "8b4610b3-90c0-4c89-a720-40894dd1e813", null, "Admin", "ADMIN" },
+                    { "a6b5e371-0923-42f6-8286-31172df739a1", null, "User", "USER" },
+                    { "ce034285-6648-4dff-8097-8ed7692b156e", null, "Editor", "EDITOR" }
+                });
+
+            migrationBuilder.InsertData(
                 table: "Books",
                 columns: new[] { "Id", "Price", "Title" },
                 values: new object[,]

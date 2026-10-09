@@ -27,7 +27,16 @@ namespace Services
 
         public async Task<IdentityResult> RegisterUser ( UserForRegistirationDto userForRegistirationDto )
         {
-            throw new NotImplementedException ( );
+            var user = _mapper.Map<User>(userForRegistirationDto);
+
+            var result = await _userManager.CreateAsync(user, userForRegistirationDto.Password);
+
+            if (result.Succeeded)
+            {
+               await _userManager.AddToRolesAsync(user, userForRegistirationDto.Roles);
+            }
+
+            return result;
         }
     }
 }

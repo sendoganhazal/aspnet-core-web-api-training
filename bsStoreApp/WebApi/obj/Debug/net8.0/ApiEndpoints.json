@@ -1,5 +1,21 @@
 [
   {
+    "ContainingType": "Presentation.Controllers.AuthenticationController",
+    "Method": "RegisterUser",
+    "RelativePath": "api/authentication",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userForRegistirationDto",
+        "Type": "Entities.DataTransferObjects.UserForRegistirationDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Presentation.Controllers.BooksController",
     "Method": "GetAllBooksAsync",
     "RelativePath": "api/books",

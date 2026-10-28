@@ -39,7 +39,7 @@ builder.Services.ConfigureCors ( );
 builder.Services.ConfigureDataShaper ( );
 
 
-builder.Services.AddAuthentication();
+builder.Services.ConfigureJwt(builder.Configuration);
 builder.Services.ConfigureIdentity ( );
 
 var app = builder.Build();

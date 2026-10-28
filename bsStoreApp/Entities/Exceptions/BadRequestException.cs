@@ -4,12 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Entities.Excepitons
+namespace Entities.Exceptions
 {
     public abstract class BadRequestException : Exception
     {
-        protected BadRequestException ( string? message ) : base ( message )
+        protected BadRequestException(string message): 
+            base(message)
         {
+
         }
     }
+
 }

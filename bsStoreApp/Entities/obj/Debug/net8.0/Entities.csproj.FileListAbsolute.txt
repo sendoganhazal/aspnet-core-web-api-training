@@ -10,3 +10,4 @@ C:\Users\Maarifa 1\Desktop\aspnet-core-web-api-training\bsStoreApp\Entities\obj\
 C:\Users\Maarifa 1\Desktop\aspnet-core-web-api-training\bsStoreApp\Entities\obj\Debug\net8.0\refint\Entities.dll
 C:\Users\Maarifa 1\Desktop\aspnet-core-web-api-training\bsStoreApp\Entities\obj\Debug\net8.0\Entities.pdb
 C:\Users\Maarifa 1\Desktop\aspnet-core-web-api-training\bsStoreApp\Entities\obj\Debug\net8.0\ref\Entities.dll
+C:\Users\Maarifa 1\Desktop\aspnet-core-web-api-training\bsStoreApp\Entities\obj\Debug\net8.0\Entities.csproj.AssemblyReference.cache

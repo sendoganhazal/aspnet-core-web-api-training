@@ -2,6 +2,7 @@
 using Entities.Excepitons;
 using Entities.Models;
 using Entities.RequestFeatures;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using Presentation.ActionFilters;
@@ -26,6 +27,7 @@ namespace Presentation.Controllers
             _manager = manager;
         }
 
+        [Authorize]
         [HttpGet]
         public async Task<IActionResult> GetAllBooksAsync ( [FromQuery] BookParameters bookParameters )
         {

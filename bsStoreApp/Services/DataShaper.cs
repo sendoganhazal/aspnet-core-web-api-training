@@ -36,8 +36,12 @@ namespace Services
             var requiredFields = new List<PropertyInfo>();
             if(!string.IsNullOrWhiteSpace(fieldsString))
             {
+<<<<<<< HEAD
                 var fields = fieldsString.Split(',', 
                     StringSplitOptions.RemoveEmptyEntries);
+=======
+                var fields = fieldsString?.Split (',', StringSplitOptions.RemoveEmptyEntries);
+>>>>>>> test
 
                 foreach (var field in fields)
                 {

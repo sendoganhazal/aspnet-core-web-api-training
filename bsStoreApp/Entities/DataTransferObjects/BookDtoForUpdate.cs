@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace Entities.DataTransferObjects
 {
-    public record BookDtoForUpdate : BookDtoForManipulation 
+    public record BookDtoForUpdate : BookDtoForManipulation
     {
         [Required]
-        public int Id { get; init; }
+        public int Id { get; set; }
     }
 }

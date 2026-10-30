@@ -1,8 +1,24 @@
 [
   {
     "ContainingType": "Presentation.Controllers.AuthenticationController",
+    "Method": "Authenticate",
+    "RelativePath": "api/authentication/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "Entities.DataTransferObjects.UserForAuthenticationDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.Controllers.AuthenticationController",
     "Method": "RegisterUser",
-    "RelativePath": "api/authentication",
+    "RelativePath": "api/authentication/register",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
